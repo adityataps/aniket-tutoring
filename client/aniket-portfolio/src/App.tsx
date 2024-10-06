@@ -1,19 +1,21 @@
 import "./App.css";
-import CustomButton from "./components/customButton.tsx";
-import CustomText from "./components/CustomText.tsx";
+import Home from "./home/Home.tsx";
 import { Colors } from "./utilities/colors.constants.ts";
 
 function App() {
-  return;
-  //   <CustomButton
-  //     style={{ color: Colors.webpageBg }}
-  //     onClick={() => console.log("i am clicked")}
-  //     variant="outlined"
-  //   >
-  //     Aniket here
-  //   </CustomButton>
+  return (
+    <div
+      style={{
+        // marginTop: 0,
+        height: "100vh",
+        width: "100%",
 
-  // <CustomText>hi there, this is Aniket's portfolio</CustomText>;
+        backgroundColor: Colors.webpageBg,
+      }}
+    >
+      <Home></Home>
+    </div>
+  );
 }
 
 export default App;

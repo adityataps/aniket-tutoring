@@ -10,10 +10,19 @@ const CustomButton: React.FC<ButtonInterface> = ({
   endIcon,
   onClick,
   style,
+  textColor,
+  fontSize,
+  fontWeight = 400,
 }) => {
   return (
     <Button
-      style={{ textTransform: "none", ...style }}
+      style={{
+        textTransform: "none",
+        color: textColor,
+        fontSize: fontSize,
+        fontWeight: fontWeight,
+        ...style,
+      }}
       variant={variant}
       disabled={disabled}
       startIcon={startIcon}

@@ -1,0 +1,138 @@
+.page-container {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1.2fr 4fr;
+  height: 100%;
+}
+
+.sidebar {
+  border-right: 0.7px rgb(167, 164, 164) solid;
+}
+
+.sidebar-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 180px 1fr;
+  row-gap: 30px;
+}
+
+.am-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.am-logo-img {
+  width: 55%;
+}
+
+.navigation-container {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.bottom-bar {
+  padding: 30px;
+  background-color: #ffeccc;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 1.1fr 3fr;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 90%;
+  }
+
+  .sidebar {
+    padding-bottom: 40px;
+    border-bottom: 0.7px rgb(167, 164, 164) solid;
+    border-right: 0px;
+  }
+
+  .sidebar-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.3fr;
+    row-gap: 30px;
+  }
+
+  .am-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .am-logo-img {
+    width: 20%;
+  }
+
+  .navigation-container {
+    padding: 0px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .bottom-bar {
+    padding: 30px;
+    background-color: #ffeccc;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 30%;
+  }
+
+  .navigation-container {
+    padding: 5px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .page-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+  .navigation-container {
+    padding: 0px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .am-logo-img {
+    width: 35%;
+  }
+}

@@ -13,9 +13,11 @@ const CustomButton: React.FC<ButtonInterface> = ({
   textColor,
   fontSize,
   fontWeight = 400,
+  className,
 }) => {
   return (
     <Button
+      className={className}
       style={{
         textTransform: "none",
         color: textColor,

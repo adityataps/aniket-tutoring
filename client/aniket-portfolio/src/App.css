@@ -3,6 +3,7 @@
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr auto;
+  row-gap: 10px;
 }
 
 .main-container {
@@ -37,6 +38,44 @@
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+}
+
+.navlink {
+  background-color: #d8e7ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.navlink img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.navlink li {
+  list-style: none;
+  font-size: 25px;
+  font-weight: 400;
+  color: black;
+}
+
+/* navlink anchor tag */
+a {
+  text-decoration: none;
+  text-decoration-style: none;
+}
+
+a:hover {
+  background-color: white;
+  border: 2px black solid;
+}
+
+.navigation-container .active {
+  background-color: pink;
+  border: 0px;
 }
 
 .bottom-bar {

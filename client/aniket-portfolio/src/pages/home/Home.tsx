@@ -1,10 +1,8 @@
-import React from "react";
 import "./home.css";
-import CustomText from "../components/CustomText";
-import XIcon from "@mui/icons-material/X";
-import { Colors } from "../utilities/colors.constants";
+import CustomText from "../../components/CustomText";
+import { Colors } from "../../utilities/colors.constants";
 
-const Home: React.FC = () => {
+function Home() {
   return (
     <div className="home-content">
       <img src="" className="profile-img" />
@@ -20,23 +18,23 @@ const Home: React.FC = () => {
 
       <div className="social-media-links">
         <div className="social-media">
-          <img
-            src="./src/assets/images/linkedin-icon.png"
-            style={{ width: 33, height: 33 }}
-          />
+          <a href="https://www.linkedin.com/in/aniketmore19/">
+            <img src="./src/assets/images/linkedin-icon.png" />
+          </a>
         </div>
         <div className="social-media">
-          <img
-            src="./src/assets/images/github-icon.png"
-            style={{ width: 33, height: 33 }}
-          />
+          <a href="https://github.com/Aniket-More-19">
+            <img src="./src/assets/images/github-icon.png" />
+          </a>
         </div>
         <div className="social-media">
-          <XIcon style={{ width: 33, height: 33 }} />
+          <a href="https://x.com/AniketMore19a">
+            <img src="./src/assets/images/x-icon.png" />
+          </a>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Home;

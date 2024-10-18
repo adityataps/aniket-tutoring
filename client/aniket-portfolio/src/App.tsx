@@ -1,11 +1,51 @@
 import "./App.css";
-import CustomButton from "./components/customButton";
-import Home from "./home/Home";
-import { Colors } from "./utilities/colors.constants";
+import AboutMe from "./pages/about-me/AboutMe";
+import Home from "./pages/home/Home";
+import Projects from "./pages/projects/Projects";
+import Resume from "./pages/resume/Resume";
+import {
+  createBrowserRouter,
+  Route,
+  NavLink,
+  createRoutesFromElements,
+  RouterProvider,
+  Routes,
+  BrowserRouter,
+} from "react-router-dom";
+
+// const router = createBrowserRouter(
+//   createRoutesFromElements(
+//     <Route path="/" element={<Home />}>
+//       <Route index element={<Home />} />
+//       <Route path="projects" element={<Projects />} />
+//       <Route path="resume" element={<Resume />} />
+//       <Route path="about-me" element={<AboutMe />} />
+//     </Route>
+//   )
+// );
+
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Home />,
+//   },
+//   {
+//     path: "projects",
+//     element: <Projects />,
+//   },
+//   {
+//     path: "resume",
+//     element: <Resume />,
+//   },
+//   {
+//     path: "about-me",
+//     element: <AboutMe />,
+//   },
+// ]);
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <div className="page-container">
         <div className="main-container">
           <div className="sidebar">
@@ -18,118 +58,38 @@ function App() {
                 />
               </div>
               <div className="navigation-container">
-                <CustomButton
-                  variant="contained"
-                  startIcon={
-                    <img
-                      src="./src/assets/images/home-logo.png
-                  "
-                      style={{
-                        width: 35,
-                        height: 35,
-                        marginRight: 10,
-                      }}
-                    />
-                  }
-                  textColor={Colors.darkBlack}
-                  fontSize={25}
-                  fontWeight={400}
-                  style={{
-                    padding: 10,
-                    backgroundColor: "#D8E7FF",
-                    display: "flex",
-                    justifyContent: "center",
-                    borderRadius: 10,
-                  }}
-                >
-                  Home
-                </CustomButton>
-                <CustomButton
-                  variant="contained"
-                  startIcon={
-                    <img
-                      src="./src/assets/images/projects-logo.png
-                  "
-                      style={{
-                        width: 35,
-                        height: 35,
-                        marginRight: 10,
-                      }}
-                    />
-                  }
-                  textColor={Colors.darkBlack}
-                  fontSize={25}
-                  fontWeight={400}
-                  style={{
-                    padding: 10,
-                    backgroundColor: "#D8E7FF",
-                    display: "flex",
-                    justifyContent: "center",
-                    borderRadius: 10,
-                  }}
-                >
-                  Projects
-                </CustomButton>
-                <CustomButton
-                  variant="contained"
-                  startIcon={
-                    <img
-                      src="./src/assets/images/resume-logo.png
-                  "
-                      style={{
-                        width: 35,
-                        height: 35,
-                        marginRight: 10,
-                      }}
-                    />
-                  }
-                  textColor={Colors.darkBlack}
-                  fontSize={25}
-                  fontWeight={400}
-                  style={{
-                    padding: 10,
-                    backgroundColor: "#D8E7FF",
-                    display: "flex",
-                    justifyContent: "center",
-                    borderRadius: 10,
-                  }}
-                >
-                  Resume
-                </CustomButton>
-                <CustomButton
-                  variant="contained"
-                  startIcon={
-                    <img
-                      src="./src/assets/images/about-me-logo.png
-                  "
-                      style={{
-                        width: 35,
-                        height: 35,
-                        marginRight: 10,
-                      }}
-                    />
-                  }
-                  textColor={Colors.darkBlack}
-                  fontSize={25}
-                  fontWeight={400}
-                  style={{
-                    padding: 10,
-                    backgroundColor: "#D8E7FF",
-                    display: "flex",
-                    justifyContent: "center",
-                    borderRadius: 10,
-                  }}
-                >
-                  About me
-                </CustomButton>
+                <NavLink to={"/"} className="navlink">
+                  <img src="./src/assets/images/home-logo.png" />
+                  <li>Home</li>
+                </NavLink>
+                <NavLink to={"/projects"} className="navlink">
+                  <img src="./src/assets/images/projects-logo.png" />
+                  <li>Projects</li>
+                </NavLink>
+                <NavLink to={"/resume"} className="navlink">
+                  <img src="./src/assets/images/resume-logo.png" />
+                  <li>Resume</li>
+                </NavLink>
+                <NavLink to={"/about-me"} className="navlink">
+                  <img src="./src/assets/images/about-me-logo.png" />
+                  <li>About me</li>
+                </NavLink>
               </div>
             </div>
           </div>
-          <Home></Home>
+          <div>
+            {/* <RouterProvider router={router} /> */}
+            <Routes>
+              <Route path="/" element={<Home />}></Route>
+              <Route path="projects" element={<Projects />} />
+              <Route path="resume" element={<Resume />} />
+              <Route path="about-me" element={<AboutMe />} />
+            </Routes>
+          </div>
         </div>
         <div className="bottom-bar"></div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 

@@ -61,6 +61,16 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 1280px) {
+  .resume-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 625px;
+    padding: 10px 20px;
+    row-gap: 10px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .resume-page {
     display: grid;

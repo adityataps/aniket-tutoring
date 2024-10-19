@@ -1,0 +1,148 @@
+.resume-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 545px;
+  padding: 10px 20px;
+  row-gap: 10px;
+}
+
+.download-resume {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  align-items: center;
+  background-color: #f5d9ff;
+  padding: 0px 50px;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.download-resume img {
+  width: 30px;
+  height: 38px;
+}
+
+.download-resume h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.resume-container {
+}
+
+.pdf {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px grey solid;
+}
+
+@media screen and (max-width: 1280px) {
+  .resume-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 540px;
+    padding: 10px 20px;
+    row-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .resume-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 875px;
+    padding: 10px 20px;
+    row-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .resume-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 875px;
+    padding: 10px 20px;
+    row-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .resume-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 800px;
+    padding: 10px 20px;
+    row-gap: 10px;
+  }
+  .pdf {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .resume-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 750px;
+    padding: 10px 20px;
+    row-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .resume-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 500px;
+    padding: 10px 20px;
+    row-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .download-resume {
+    padding: 0px 20px;
+  }
+  .download-resume img {
+    width: 25px;
+    height: 32px;
+  }
+
+  .download-resume h3 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .resume-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 425px;
+    padding: 10px 20px;
+    row-gap: 10px;
+  }
+
+  .download-resume {
+    padding: 0px 15px;
+  }
+
+  .download-resume h3 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .resume-page {
+    padding: 10px 10px;
+  }
+
+  .download-resume {
+    padding: 0px 15px;
+  }
+
+  .download-resume h3 {
+    font-size: 15px;
+  }
+}

@@ -1,9 +1,23 @@
 .resume-page {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 70px 545px;
+  /* grid-template-rows: 75px 545px; */
+  grid-template-rows: 625px;
   padding: 10px 20px;
   row-gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-style: none;
+  color: black;
+}
+
+a:hover {
+  border: 0px;
+  text-decoration: none;
+  text-decoration-style: none;
+  width: fit-content;
 }
 
 .download-resume {
@@ -41,7 +55,7 @@
   .resume-page {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 540px;
+    grid-template-rows: 725px;
     padding: 10px 20px;
     row-gap: 10px;
   }
@@ -51,7 +65,7 @@
   .resume-page {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 875px;
+    grid-template-rows: 925px;
     padding: 10px 20px;
     row-gap: 10px;
   }
@@ -61,7 +75,7 @@
   .resume-page {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 875px;
+    grid-template-rows: 975px;
     padding: 10px 20px;
     row-gap: 10px;
   }
@@ -71,7 +85,7 @@
   .resume-page {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 800px;
+    grid-template-rows: 875px;
     padding: 10px 20px;
     row-gap: 10px;
   }
@@ -85,7 +99,17 @@
   .resume-page {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 750px;
+    grid-template-rows: 825px;
+    padding: 10px 20px;
+    row-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .resume-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px;
     padding: 10px 20px;
     row-gap: 10px;
   }
@@ -95,7 +119,7 @@
   .resume-page {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 500px;
+    grid-template-rows: 575px;
     padding: 10px 20px;
     row-gap: 10px;
   }
@@ -119,8 +143,8 @@
   .resume-page {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 425px;
-    padding: 10px 20px;
+    grid-template-rows: 450px;
+    padding: 10px 10px;
     row-gap: 10px;
   }
 
@@ -135,7 +159,11 @@
 
 @media screen and (max-width: 345px) {
   .resume-page {
-    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px;
+    padding: 10px 20px;
+    row-gap: 10px;
   }
 
   .download-resume {

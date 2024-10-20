@@ -68,9 +68,11 @@ a {
   text-decoration-style: none;
 }
 
-a:hover {
+.navigation-container a:hover {
   background-color: white;
-  border: 2px black solid;
+  border: 1.5px black solid;
+  align-self: center;
+  width: 90%;
 }
 
 .navigation-container .active {

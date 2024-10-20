@@ -53,4 +53,6 @@ export interface ButtonInterface {
     | "revert"
     | "revert-layer"
     | "unset";
+
+  className?: string;
 }

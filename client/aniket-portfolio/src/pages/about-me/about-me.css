@@ -1,0 +1,88 @@
+h2,
+h3 {
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.about-me-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 2fr 0.1fr;
+  padding: 1.2rem;
+  height: 100%;
+  row-gap: 1rem;
+}
+
+.text-info {
+  grid-column: span 2;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 1.2rem;
+  height: 100%;
+}
+
+.work-experience {
+  padding: 0rem 2rem;
+}
+
+.work-experience h2 {
+  text-align: center;
+}
+
+.experience {
+  text-align: center;
+  margin-top: 1rem;
+  background-color: #f7faa7;
+  padding: 0.4rem;
+  border-radius: 0.8rem;
+}
+
+.tech-skills {
+  background-color: #d7ffdd;
+  border-radius: 0.8rem;
+}
+
+.tech-skills h2 {
+  text-align: center;
+}
+
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+  padding: 0rem 1.5rem;
+}
+
+.skills-wrapper h4 {
+  background-color: #82d4aa;
+  text-align: center;
+  padding: 0.7rem 0rem;
+  border-radius: 0.8rem;
+  margin: 0rem;
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1.2rem;
+    height: 100%;
+  }
+}
